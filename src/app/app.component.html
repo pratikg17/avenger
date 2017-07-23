@@ -1,0 +1,25 @@
+<header>
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand">SHIELD</a>
+            </div>
+            <ul class="nav navbar-nav">
+                <li><a [routerLink]="['/home']"> Home</a></li>
+                <li><a [routerLink]="['/avengers']">Avengers</a></li>
+                <li><a [routerLink]="['/guardian']">Guardians</a></li>
+                <li><a [routerLink]="['/xmen']">X-Mens</a></li>
+                <li><a [routerLink]="['/fantastic']">Fantastic Four</a></li>
+                <li><a [routerLink]="['/weapons']">Weaponary</a></li>
+            </ul>
+        </div>
+    </nav>
+</header>
+<div class="container-fluid" style="display:flex;justify-content:center">
+
+    <img class="img-responsive" src="/assets/images/shield.png" alt="SHIELD">
+</div>
+
+<div class='container'>
+    <router-outlet></router-outlet>
+</div>
